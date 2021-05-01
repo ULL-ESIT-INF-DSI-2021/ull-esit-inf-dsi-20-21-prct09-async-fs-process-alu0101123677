@@ -13,12 +13,11 @@
 
 ### 1. Introducción
 
-
 **Importante:**  Utilizar el comando `npm install` para instalar las dependencias de desarrollo que utiliza el proyecto cuando se descargue de GitHub. 
 
 ### 2. Objetivos
 
-
+El objetivo principal es familiarizarse API de callbacks y la API asíncrona por Node.js, para esto tendremos que realizar 4 ejercicios.
 
 ### 3. Desarrollo
 
@@ -30,14 +29,66 @@ Por otro lado leer y familiarizarse con la API de callbacks para interactuar con
 
 #### 3.2 Desarrollo
 
+##### 3.2.1 Ejercicio 1
+En el ejercicio 1 tenemos el siguiente código de ejemplo el cúal era necesario analizar y realizar la traza de ejecución del mismo además de que es lo que se muestra por consola, utilizando como fichero de texto el helloworld.txt que se encuentra en data_base:
+
+**Código**
+```typescript
+import {access, constants, watch} from 'fs';
+
+if (process.argv.length !== 3) {
+  console.log('Please, specify a file');
+} else {
+  const filename = process.argv[2];
+
+  access(filename, constants.F_OK, (err) => {
+    if (err) {
+      console.log(`File ${filename} does not exist`);
+    } else {
+      console.log(`Starting to watch file ${filename}`);
+
+      const watcher = watch(process.argv[2]);
+
+      watcher.on('change', () => {
+        console.log(`File ${filename} has been modified somehow`);
+      });
+
+      console.log(`File ${filename} is no longer watched`);
+    }
+  });
+}
+```
+
+pila de llamadas | registro de eventos | cola de manejadores | salida
+-----------------|---------------------|---------------------|-------
+Contenido de la primera | contenido de la segunda | contenido de la tercera | contenido de la cuarta
+
+
+**Traza**
+
+
+
+**¿Qué hace la función access?**
+
+La función access de Node.js es un método utilizado para probar los permisos de un archivo o directorio determinado. Los permisos que se van a comprobar pueden ser especificados como un parámetro usando las constantes de acceso a archivos.
+
+**¿Para qué sirve el objeto constants?**
+
+El objeto constants es utilizado para las operaciones del sistema de archivos, débido a que contiene las constantes más utilizadas para este tipo de operaciones.
+
+##### 3.2.2 Ejercicio 2
+
+##### 3.2.3 Ejercicio 3
+
+##### 3.2.4 Ejercicio 4
+
 
 ### 4. Conclusiones
 
 
-
 ### 5. Bibliografía
 
-[Guión de la práctica 9]()
+[Guión de la práctica 9](https://ull-esit-inf-dsi-2021.github.io/prct09-async-fs-process/)
 
 [Introducción a Node.js](https://ull-esit-inf-dsi-2021.github.io/nodejs-theory/nodejs-intro.html)
 
@@ -45,8 +96,6 @@ Por otro lado leer y familiarizarse con la API de callbacks para interactuar con
 
 [Yarg](https://www.npmjs.com/package/yargs)
 
-[Chalk](https://www.npmjs.com/package/chalk)
 
-[API síncrona](https://nodejs.org/dist/latest-v15.x/docs/api/fs.html#fs_synchronous_api) 
 
 
