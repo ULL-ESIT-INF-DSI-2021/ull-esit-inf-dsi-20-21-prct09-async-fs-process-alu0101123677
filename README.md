@@ -59,9 +59,30 @@ if (process.argv.length !== 3) {
 }
 ```
 
+ * Inicializacion
+
 pila de llamadas | registro de eventos | cola de manejadores | salida
 -----------------|---------------------|---------------------|-------
-Contenido de la primera | contenido de la segunda | contenido de la tercera | contenido de la cuarta
+ |  |  | 
+ 
+ * Step 1. Se introduce el main del programa en la pila de llamadas
+
+ pila de llamadas | registro de eventos | cola de manejadores | salida
+-----------------|---------------------|---------------------|-------
+ main |  |  | 
+
+  * Step 2. Se introduce el access en la pila de llamadas
+
+ pila de llamadas | registro de eventos | cola de manejadores | salida
+-----------------|---------------------|---------------------|-------
+ access |  |  |
+ main |  |  | 
+
+   * Step 3. Se pasa el access al registro de eventos.
+
+ pila de llamadas | registro de eventos | cola de manejadores | salida
+-----------------|---------------------|---------------------|-------
+ main | access |  | 
 
 
 **Traza**
