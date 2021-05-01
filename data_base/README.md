@@ -1,1 +1,1 @@
-Carpeta utilizada para guardar los usuarios y sus notas
+Carpeta utilizada para guardar los usuarios y sus notas así cómo el .txt usado para el ejercicio 1
