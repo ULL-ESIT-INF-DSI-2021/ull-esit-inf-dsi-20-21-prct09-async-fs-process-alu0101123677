@@ -184,9 +184,25 @@ La función access de Node.js es un método utilizado para probar los permisos d
 
 El objeto constants es utilizado para las operaciones del sistema de archivos, débido a que contiene las constantes más utilizadas para este tipo de operaciones.
 
-##### 3.2.2 Ejercicio 2
+##### [3.2.2 Ejercicio 2](src/ejercicio2.ts)
+
+Para el ejercicio 2 creamos un **yarg** para utilizar el comando info que proporcionar información sobre el número de líneas, palabras o caracteres que contiene un fichero de texto. A su vez creamos las funciones **pipe** y **noPipe** para realizar el ejercicio de las dos máneras de que se nos piden.
+
+El comando **info** se construye pasando por línea de cómando, la **ruta del archivo** siendo un string y los siguientes atributos siendo booleanos son **pipe**, **character**, **word** o **line**, para de esta mánera indicar que método queremos usar y sobre que queremos proporcionar información. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método correspondiente según el estado de **pipe**.
+
+El método **pipe** recibe como atributo la **ruta del archivo** y los booleanos **character**, **word** y **line**. Comprobamos al inicio la ruta del archivo para así comprobar si el archivo existe o no. Si el archivo existe realizamos un if para cada booleano, en caso de ser true realizamos dos métodos **spawn**, uno realizando un echo y el otro un **wc** pasandole la opción correspondiente para caracteres, palabras y lineas y utilizando el método **pipe** para mostrar el **echo** y los resultados del **wc**.
+
+El método **noPipe** recibe como atributo la **ruta del archivo** y los booleanos **character**, **word** y **line**. Comprobamos al inicio la ruta del archivo para así comprobar si el archivo existe o no. Si el archivo existe realizamos el método **spawn** para ejcutar el comando **wc**, luego creamos la varaible **wcOutput** que va a utilizarse para ir almacenando el contenido de la salida estándar generada por el comando wc. A continuación el callback obtenido mediante el método **on** nos permite mostrar por consola las diferentes estadisticas obtenidas a partir de la ejecución del comando **wc** y antes de mostrar por pantalla cáda estadistica realizamos un if de cada booleano para saber si mostrar o no la estadistica correspondiente.
+
+Para ejecutar el programa se tienen las siguientes opciones:
+
+node dist/ejercicio2.js info --path='ruta del archivo' --pipe=true --character=true --word=true --line=true
+
+las opciones que están a true pueden ponerse a false.
 
 ##### 3.2.3 Ejercicio 3
+
+
 
 **¿Cómo haría para mostrar, no solo el nombre, sino también el contenido del fichero, en el caso de que haya sido creado o modificado?**
 
@@ -213,6 +229,10 @@ Para observar los directorios correspondientes de cada usuario podriamos incluir
 [Introducción al sistema de ficheros en Node.js](https://ull-esit-inf-dsi-2021.github.io/nodejs-theory/nodejs-filesystem.html)
 
 [Yarg](https://www.npmjs.com/package/yargs)
+
+[API de callbacks](https://nodejs.org/dist/latest/docs/api/fs.html#fs_callback_api)
+
+[API asíncrona](https://nodejs.org/dist/latest/docs/api/child_process.html#child_process_asynchronous_process_creation)
 
 
 

@@ -3,6 +3,12 @@ import * as fs from 'fs';
 import {spawn} from 'child_process';
 import * as chalk from 'chalk'
 
+/**
+ * Comando que proporciona informacion sobre el número de líneas, palabras o caracteres que contiene un fichero de texto
+ * 
+ * Se pasan por parametro en terminal, la ruta del archivo, opcion para el pipe, opcion para caracteres, opcion para
+ * palabras, opcion para lineas.
+ */
 yargs.command({
   command: 'info',
   describe: 'Proporciona informacion sobre el número de líneas, palabras o caracteres que contiene un fichero de texto',
@@ -48,6 +54,14 @@ yargs.command({
 
 yargs.parse();
 
+/**
+ * Proporciona informacion sobre el número de líneas, palabras o caracteres que contiene un fichero de texto
+ * usando el método pipe
+ * @param path string que contiene la ruta del archivo
+ * @param character booleano que indica la opcion para mostrar caracteres 
+ * @param word booleano que indica la opcion para mostrar palabras
+ * @param line booleano que indica la opcion para mostrar lineas
+ */
 function pipe(path: string, character: boolean, word: boolean, line: boolean) {
   if (fs.existsSync(path)) {
     if (character) {
@@ -73,6 +87,14 @@ function pipe(path: string, character: boolean, word: boolean, line: boolean) {
     console.log(chalk.red("ERROR: El archivo no existe"))
 }
 
+/**
+ * Proporciona informacion sobre el número de líneas, palabras o caracteres que contiene un fichero de texto
+ * sin usar el método pipe
+ * @param path string que contiene la ruta del archivo
+ * @param character booleano que indica la opcion para mostrar caracteres 
+ * @param word booleano que indica la opcion para mostrar palabras
+ * @param line booleano que indica la opcion para mostrar lineas
+ */
 function noPipe(path: string, character: boolean, word: boolean, line: boolean) {
   if (fs.existsSync(path)) {
     let wc = spawn('wc', [path]);
