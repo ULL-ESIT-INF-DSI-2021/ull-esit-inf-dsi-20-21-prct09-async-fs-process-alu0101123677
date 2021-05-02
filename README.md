@@ -15,7 +15,7 @@
 
 Informe de la novena práctica de la asignatura de **Desarrollo de Sistemas Informáticos**. En la práctica propuesta se ha realizado 4 ejercicios en typescript en los cuales trabajaremos con sistemas de ficheros y creación de procesos en Node.js
 
-**Importante:**  Utilizar el comando `npm install` para instalar las dependencias de desarrollo que utiliza el proyecto cuando se descargue de GitHub. 
+**Importante:**  Utilizar el comando `npm install` para instalar las dependencias de desarrollo que utiliza el proyecto cuando se descargue de GitHub. Por otro lado no supera el sonarcloud debido a que no se han realizado pruebas unitarias para esta práctica y el coverage se encuentra menor que un 70%.
 
 ### 2. Objetivos
 
@@ -27,7 +27,7 @@ El objetivo principal es familiarizarse con la **API de callbacks** y la **API a
 
 Para el desarrollo de la práctica cómo tal primero hay que hacer unas preparaciones previas, hay que aceptar la asignación de la práctica 9 y preparar el entorno del proyecto, para esto es necesario package.json y tsconfig.json, así cómo crear la estructura de directorios. Además de seguir las pautas para implementar la generación de documentación por **typedoc**, los test unitarios realizandos con **mocha** y **chai**, el cubrimiento de código mediante **instabul** y **coveralls** y por último la implementación de **GitHub Actions** que llevará a cabo los test unitarios, el cubrimiento del código y la utilización del **Sonar Cloud** para comprobar la calidad y seguridad del código fuente.
 
-Por otro lado leer y familiarizarse con la **API de callbacks** para interactuar con el istema de ficheros y la **API asíncrona** para crear procesos. 
+Por otro lado leer y familiarizarse con la **API de callbacks** para interactuar con el sistema de ficheros y la **API asíncrona** para crear procesos. 
 
 #### 3.2 Desarrollo
 
