@@ -13,11 +13,13 @@
 
 ### 1. Introducción
 
+Informe de la novena práctica de la asignatura de **Desarrollo de Sistemas Informáticos**. En la práctica propuesta se ha realizado 4 ejercicios en typescript en los cuales trabajaremos con sistemas de ficheros y creación de procesos en Node.js
+
 **Importante:**  Utilizar el comando `npm install` para instalar las dependencias de desarrollo que utiliza el proyecto cuando se descargue de GitHub. 
 
 ### 2. Objetivos
 
-El objetivo principal es familiarizarse API de callbacks y la API asíncrona por Node.js, para esto tendremos que realizar 4 ejercicios.
+El objetivo principal es familiarizarse **API de callbacks** y la **API asíncrona** por Node.js, para esto tendremos que realizar 4 ejercicios.
 
 ### 3. Desarrollo
 
@@ -220,11 +222,37 @@ Cuando haya sido creado o modificado, además del **console.log()** que se ejecu
 
 Para observar los directorios correspondientes de cada usuario podriamos incluir que nuestro **fs.watch()** estuviera la opción **recursive**, de esta manera si observamos un directorio que tiene como subdirectorios los de cada usuario estos también estarán siendo observados.
 
-##### 3.2.4 Ejercicio 4
+##### 3.2.4 [Ejercicio 4](src/ejercicio4.ts)
 
+Para el ejercicio 4 creamos varios **yarg** para utilizar el comando **check**, **mkdir**, **ls**, **cat**, **rm** y **mv** que realizan distintan funciones sobre manejo de ficheros y directorios. A su vez creamos las funciones **check**, **mkdir**, **ls**, **cat**, **rm** y **mv**.
+
+El comando **check** se utiliza para que dada una ruta concreta, muestra si es un directorio o un fichero, se construye pasando por línea de cómando, la **ruta** siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método **check**.
+
+El comando **mkdir** se utiliza para crear un nuevo directorio a partir de una nueva ruta que recibe como parámetro, se construye pasando por línea de cómando, la **ruta** siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método **mkdir**.
+
+El comando **ls** se utiliza para que listar los ficheros dentro de un directorio, se construye pasando por línea de cómando, la **ruta** siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método **ls**.
+
+El comando **cat** se utiliza para que muestra el contenido de un fichero, se construye pasando por línea de cómando, la **ruta** siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método **cat**.
+
+El comando **rm** se utiliza para que borra ficheros y directorios, se construye pasando por línea de cómando, la **ruta** siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método **rm**.
+
+El comando **mv** se utiliza para que mueve y copia ficheros y/o directorios de una ruta a otra, se construye pasando por línea de cómando, la **ruta de origen** y la **ruta de destino** siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método **mv**.
+
+El método **check** recibe como atributo la **ruta**. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método **fs.readdir()** y comprobamos el error, si el error es true se trata de un fichero y si es false se tratará de un directorio, siendo en cada caso realizamos un **console.log()** para mostrar por consola cual es el resultado.
+
+El método **mkdir** recibe como atributo la **ruta**. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si no existe realizamos el método **spawn()** para ejecutar el comando **mkdir**.
+
+El método **ls** recibe como atributo la **ruta**. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método **spawn()** para ejecutar el comando **ls**.
+
+El método **cat** recibe como atributo la **ruta**. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método **spawn()** para ejecutar el comando **cat**.
+
+El método **rm** recibe como atributo la **ruta**. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método **spawn()** para ejecutar el comando **rm**.
+
+El método **mv** recibe como atributo la **ruta de origen** y la **ruta de destino**. Comprobamos al inicio la ruta de origen así cómo ruta de destino para así comprobar si existe o no. Si existen realizamos el método **spawn()** para ejecutar el comando **mv**.
 
 ### 4. Conclusiones
 
+En conclusión está práctica con diversos ejercicios, algunos más sencillos que otros tienen un punto más téorico, cómo el ejercicio 1, pero que sirven bastante para profundizar en la utilización de la API de callbacks la asíncrona así cómo en el seguimiento de ejecución de un proceso.
 
 ### 5. Bibliografía
 
