@@ -200,9 +200,17 @@ node dist/ejercicio2.js info --path='ruta del archivo' --pipe=true --character=t
 
 las opciones que están a true pueden ponerse a false.
 
-##### 3.2.3 Ejercicio 3
+##### 3.2.3 [Ejercicio 3](src/ejercicio3.ts)
 
+Para el ejercicio 3 creamos un **yarg** para utilizar el comando **watch** que observa el directorio de un usuario esperando un cambio, que puede ser añadir, eliminar o modificar un fichero. A su vez creamos la función **watch**.
 
+El comando **watch** se construye pasando por línea de cómando, el **usuario** y la **ruta del directorio** siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método **watch**.
+
+El método **watch** recibe como atributo la **ruta del directorio**. Comprobamos al inicio la ruta del directorio para así comprobar si el directorio existe o no. Si el directorio existe realizamos el método **fs.readdir()** para así saber cuantos archivos hay en su interior y dentro del callback de esta función realizamos el **fs.watch()**, combinado con un contador gracias a que **evenType** nos devuelve los string "rename" o "change" y  realizando otro **readdir()** para saber cuantos archivos hay en el momento podemos comparar los estados inicial y el estado nuevo, y así distinguir si se ha creado o eliminado un archivo así cómo si se ha modificado alguno para notificarlo con un mediante un **console.log()**.
+
+Para ejecutar el programa se tienen la siguiente opcion:
+
+node dist/ejercicio3.js watch --user='usuario' --path='ruta del archivo'
 
 **¿Cómo haría para mostrar, no solo el nombre, sino también el contenido del fichero, en el caso de que haya sido creado o modificado?**
 
@@ -211,8 +219,6 @@ Cuando haya sido creado o modificado, además del **console.log()** que se ejecu
 **¿Cómo haría para que no solo se observase el directorio de un único usuario sino todos los directorios correspondientes a los diferentes usuarios de la aplicación**
 
 Para observar los directorios correspondientes de cada usuario podriamos incluir que nuestro **fs.watch()** estuviera la opción **recursive**, de esta manera si observamos un directorio que tiene como subdirectorios los de cada usuario estos también estarán siendo observados.
-
-
 
 ##### 3.2.4 Ejercicio 4
 

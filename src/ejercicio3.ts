@@ -2,6 +2,11 @@ import * as yargs from 'yargs';
 import * as fs from 'fs';
 import * as chalk from 'chalk'
 
+/**
+ * Comando que observa el directorio de un usuario esperando un cambio
+ * 
+ * Se pasan por parametro en terminal, el usuario del directorio y la ruta del directorio
+ */
 yargs.command({
   command: 'watch',
   describe: 'Observa el directorio de un usuario esperando un cambio',
@@ -28,6 +33,10 @@ yargs.command({
 
 yargs.parse();
 
+/**
+ * Método que se utiliza para observar y notificar si hay cambios en un directorio
+ * @param path string con la ruta del directorio a observar
+ */
 function watch(path: string){
   if (fs.existsSync(path)) {
     let count = 0
