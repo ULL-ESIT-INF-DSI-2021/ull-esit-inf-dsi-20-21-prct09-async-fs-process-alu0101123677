@@ -19,7 +19,7 @@ Informe de la novena práctica de la asignatura de **Desarrollo de Sistemas Info
 
 ### 2. Objetivos
 
-El objetivo principal es familiarizarse **API de callbacks** y la **API asíncrona** por Node.js, para esto tendremos que realizar 4 ejercicios.
+El objetivo principal es familiarizarse con la **API de callbacks** y la **API asíncrona** por Node.js, para esto tendremos que realizar 4 ejercicios.
 
 ### 3. Desarrollo
 
