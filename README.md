@@ -188,6 +188,12 @@ El objeto constants es utilizado para las operaciones del sistema de archivos, d
 
 ##### 3.2.3 Ejercicio 3
 
+**¿Cómo haría para mostrar, no solo el nombre, sino también el contenido del fichero, en el caso de que haya sido creado o modificado?**
+
+**¿Cómo haría para que no solo se observase el directorio de un único usuario sino otods los directorios correspondientes a los diferentes usuarios de la aplicación**
+
+
+
 ##### 3.2.4 Ejercicio 4
 
 
