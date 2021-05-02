@@ -58,8 +58,8 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#informe-de-la-práctica-8-de-la-asignatura-de-desarrollo-de-sistemas-infórmaticas" id="informe-de-la-práctica-8-de-la-asignatura-de-desarrollo-de-sistemas-infórmaticas" style="color: inherit; text-decoration: none;">
-					<h1>Informe de la Práctica 8 de la asignatura de Desarrollo de Sistemas Infórmaticas</h1>
+				<a href="#informe-de-la-práctica-9-de-la-asignatura-de-desarrollo-de-sistemas-infórmaticas" id="informe-de-la-práctica-9-de-la-asignatura-de-desarrollo-de-sistemas-infórmaticas" style="color: inherit; text-decoration: none;">
+					<h1>Informe de la Práctica 9 de la asignatura de Desarrollo de Sistemas Infórmaticas</h1>
 				</a>
 				<a href="#datos" id="datos" style="color: inherit; text-decoration: none;">
 					<h2>Datos</h2>
@@ -70,85 +70,502 @@
 					<li><strong>Gmail:</strong> alu0101123677@ull.edu.es</li>
 					<li><strong>Univeridad:</strong> Universidad de La Laguna</li>
 					<li><strong>Asignatura:</strong> Desarrollo de Sistemas Informáticos</li>
-					<li><strong>Práctica:</strong> Práctica 8 Aplicación de procesamiento de notas de texto</li>
+					<li><strong>Práctica:</strong> Práctica 9 Sistema de ficheros y creación de procesos en Node.js</li>
 				</ul>
-				<p><a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101123677/actions/workflows/tests.yml"><img src="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101123677/actions/workflows/tests.yml/badge.svg" alt="Tests"></a></p>
-				<p><a href="https://coveralls.io/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101123677?branch=main"><img src="https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101123677/badge.svg?branch=main" alt="Coverage Status"></a></p>
-				<p><a href="https://sonarcloud.io/dashboard?id=ULL-ESIT-INF-DSI-2021_ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101123677"><img src="https://sonarcloud.io/api/project_badges/measure?project=ULL-ESIT-INF-DSI-2021_ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101123677&metric=alert_status" alt="Quality Gate Status"></a></p>
+				<p> <a href="https://coveralls.io/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct09-async-fs-process-alu0101123677?branch=main"><img src="https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct09-async-fs-process-alu0101123677/badge.svg?branch=main" alt="Coverage Status"></a> <a href="https://sonarcloud.io/dashboard?id=ULL-ESIT-INF-DSI-2021_ull-esit-inf-dsi-20-21-prct09-async-fs-process-alu0101123677"><img src="https://sonarcloud.io/api/project_badges/measure?project=ULL-ESIT-INF-DSI-2021_ull-esit-inf-dsi-20-21-prct09-async-fs-process-alu0101123677&metric=alert_status" alt="Quality Gate Status"></a> <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct09-async-fs-process-alu0101123677/actions/workflows/tests.yml"><img src="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct09-async-fs-process-alu0101123677/actions/workflows/tests.yml/badge.svg" alt="Tests"></a></p>
 				<a href="#desarrollo" id="desarrollo" style="color: inherit; text-decoration: none;">
 					<h2>Desarrollo</h2>
 				</a>
 				<a href="#1-introducción" id="1-introducción" style="color: inherit; text-decoration: none;">
 					<h3>1. Introducción</h3>
 				</a>
-				<p>Informe de la octava práctica de la asignatura de <strong>Desarrollo de Sistemas Informáticos</strong>. En la práctica propuesta se ha realizado un ejercicio en typescript en el cuál tendremos que implementar una aplicación de procesamiento de notas de texto. Permitirá <strong>añadir</strong>, <strong>modificar</strong>, <strong>eliminar</strong>, <strong>listar</strong> y <strong>leer</strong> notas de un usuario en concreto. Las notas se almacenarán como ficheros <strong>JSON</strong> en el sistema de ficheros de la máquina que ejecute la aplicación.</p>
-				<p>Una nota estará formada, como mínimo, por un <strong>título</strong>, un <strong>cuerpo</strong> y un <strong>color</strong> (rojo, verde, azul o amarillo).</p>
-				<p><strong>Importante:</strong>  Utilizar el comando <code>npm install</code> para instalar las dependencias de desarrollo que utiliza el proyecto cuando se descargue de GitHub. Asimismo los test unitarios si se ejecutan con <code>npm run test</code> o <code>npm run coverage</code> se ejecutan y pasan completamente pero hay ocasiones que con la integración de github action cuando se ejecutan al realizar el push es posible que alguna de las versiones de node de fallo mientras que otra versión las ejecute correctamente. </p>
+				<p>Informe de la novena práctica de la asignatura de <strong>Desarrollo de Sistemas Informáticos</strong>. En la práctica propuesta se ha realizado 4 ejercicios en typescript en los cuales trabajaremos con sistemas de ficheros y creación de procesos en Node.js</p>
+				<p><strong>Importante:</strong>  Utilizar el comando <code>npm install</code> para instalar las dependencias de desarrollo que utiliza el proyecto cuando se descargue de GitHub. </p>
 				<a href="#2-objetivos" id="2-objetivos" style="color: inherit; text-decoration: none;">
 					<h3>2. Objetivos</h3>
 				</a>
-				<p>El objetivo principal de la práctica es el aprendizaje y utilización de los paquetes <strong>yargs</strong> y <strong>chalk</strong>, así como familiarisarse con el API síncrona que proporciona Node.js. Para cumplir este objetivo se llevará a cabo el ejercicio comentado en el apartado de introducción de este informe.</p>
+				<p>El objetivo principal es familiarizarse con la <strong>API de callbacks</strong> y la <strong>API asíncrona</strong> por Node.js, para esto tendremos que realizar 4 ejercicios.</p>
 				<a href="#3-desarrollo" id="3-desarrollo" style="color: inherit; text-decoration: none;">
 					<h3>3. Desarrollo</h3>
 				</a>
 				<a href="#31-tareas-previas" id="31-tareas-previas" style="color: inherit; text-decoration: none;">
 					<h4>3.1 Tareas previas</h4>
 				</a>
-				<p>Para el desarrollo de la práctica cómo tal primero hay que hacer unas preparaciones previas, hay que aceptar la asignación de la práctica 8 y preparar el entorno del proyecto, para esto es necesario package.json y tsconfig.json, así cómo crear la estructura de directorios. Además de seguir las pautas para implementar la generación de documentación por <strong>typedoc</strong>, los test unitarios realizandos con <strong>mocha</strong> y <strong>chai</strong>, el cubrimiento de código mediante <strong>instabul</strong> y <strong>coveralls</strong> y por último la implementación de <strong>GitHub Actions</strong> que llevará a cabo los test unitarios, el cubrimiento del código y la utilización del <strong>Sonar Cloud</strong> para comprobar la calidad y seguridad del código fuente.</p>
-				<p>Por otro lado la lectura y aprendizaje de los paquetes <strong>Yargs</strong> y <strong>Chalk</strong> así cómo de la <strong>API síncrona</strong>.</p>
+				<p>Para el desarrollo de la práctica cómo tal primero hay que hacer unas preparaciones previas, hay que aceptar la asignación de la práctica 9 y preparar el entorno del proyecto, para esto es necesario package.json y tsconfig.json, así cómo crear la estructura de directorios. Además de seguir las pautas para implementar la generación de documentación por <strong>typedoc</strong>, los test unitarios realizandos con <strong>mocha</strong> y <strong>chai</strong>, el cubrimiento de código mediante <strong>instabul</strong> y <strong>coveralls</strong> y por último la implementación de <strong>GitHub Actions</strong> que llevará a cabo los test unitarios, el cubrimiento del código y la utilización del <strong>Sonar Cloud</strong> para comprobar la calidad y seguridad del código fuente.</p>
+				<p>Por otro lado leer y familiarizarse con la <strong>API de callbacks</strong> para interactuar con el istema de ficheros y la <strong>API asíncrona</strong> para crear procesos. </p>
 				<a href="#32-desarrollo" id="32-desarrollo" style="color: inherit; text-decoration: none;">
 					<h4>3.2 Desarrollo</h4>
 				</a>
-				<p>En este ejercicio creamos la clase <strong>Note</strong> y <strong>NoteGestor</strong> y el main de nuestro programa <strong>note-app</strong> implementado con <strong>yargs</strong> para utilizar la línea de comandos.</p>
-				<a href="#321-note-app" id="321-note-app" style="color: inherit; text-decoration: none;">
-					<h5>3.2.1 <a href="./src/note-app.ts">note-app</a></h5>
+				<a href="#321-ejercicio-1" id="321-ejercicio-1" style="color: inherit; text-decoration: none;">
+					<h5>3.2.1 Ejercicio 1</h5>
 				</a>
-				<p>Main del programa implementado con el paquete <strong>yargs</strong> para utilizar diversos comandos por terminal, los comandos utilizados son <strong>add</strong>, <strong>modify</strong>, <strong>list</strong>, <strong>read</strong> y <strong>remove</strong>.</p>
-				<p>Comando <strong>add</strong>, se construye pasando por línea de cómando el usuario, el titulo de la nota, el cuerpo de la nota y el color de la nota. En el handler creamos un objeto de la clase Note y otro de la clase NoteGestor para así llamar al método addNote y añadir una nota en formato json al directorio del usuario.</p>
-				<p>Comando <strong>modify</strong>, se construye pasando por línea de cómando el usuario, el título de la nota, el cuerpo de la nota y el color de la nota. En el handler creamos un objeto de la clase Note y otro de la clase NoteGestor para así llamar al método modifyNote de la clase NoteGestor y modificar una nota ya creada.</p>
-				<p>Comando <strong>list</strong>, se construye pasando por línea de cómando el usuario. En el handler creamos un objeto de la clase NoteGestor para llamar así al método listNote y mostrar todas las notas que tiene un usuario.</p>
-				<p>Comando <strong>read</strong>, se construye pasando por línea de cómando el usuario y el titulo de una nota. En el handler creamos un objeto de la clase NoteGestor para así llamar al método readNote y mostrar el contenido que tiene una nota.</p>
-				<p>Comando <strong>remove</strong>, se construye pasando por línea de cómando el usuario y el titulo de una nota. En el handler creamos un objeto de la clase NoteGestor para así llamar al método removeNote y eliminar la nota de un usuario.</p>
-				<p>Para introducir los colores deben ser: Rojo, Verde, Azul o Amarillo. Para ejecutar el programa se tienen las siguientes opciones:</p>
+				<p>En el ejercicio 1 tenemos el siguiente código de ejemplo el cúal era necesario analizar y realizar la traza de ejecución del mismo además de que es lo que se muestra por consola, utilizando como fichero de texto el helloworld.txt que se encuentra en data_base:</p>
+				<p><strong>Código</strong></p>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">access</span><span style="color: #000000">, </span><span style="color: #001080">constants</span><span style="color: #000000">, </span><span style="color: #001080">watch</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;fs&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">process</span><span style="color: #000000">.</span><span style="color: #001080">argv</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000"> !== </span><span style="color: #098658">3</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Please, specify a file&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">} </span><span style="color: #AF00DB">else</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">filename</span><span style="color: #000000"> = </span><span style="color: #001080">process</span><span style="color: #000000">.</span><span style="color: #001080">argv</span><span style="color: #000000">[</span><span style="color: #098658">2</span><span style="color: #000000">];</span>
+
+<span style="color: #000000">  </span><span style="color: #795E26">access</span><span style="color: #000000">(</span><span style="color: #001080">filename</span><span style="color: #000000">, </span><span style="color: #001080">constants</span><span style="color: #000000">.</span><span style="color: #0070C1">F_OK</span><span style="color: #000000">, (</span><span style="color: #001080">err</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">err</span><span style="color: #000000">) {</span>
+<span style="color: #000000">      </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`File </span><span style="color: #0000FF">${</span><span style="color: #001080">filename</span><span style="color: #0000FF">}</span><span style="color: #A31515"> does not exist`</span><span style="color: #000000">);</span>
+<span style="color: #000000">    } </span><span style="color: #AF00DB">else</span><span style="color: #000000"> {</span>
+<span style="color: #000000">      </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`Starting to watch file </span><span style="color: #0000FF">${</span><span style="color: #001080">filename</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">);</span>
+
+<span style="color: #000000">      </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">watcher</span><span style="color: #000000"> = </span><span style="color: #795E26">watch</span><span style="color: #000000">(</span><span style="color: #001080">process</span><span style="color: #000000">.</span><span style="color: #001080">argv</span><span style="color: #000000">[</span><span style="color: #098658">2</span><span style="color: #000000">]);</span>
+
+<span style="color: #000000">      </span><span style="color: #001080">watcher</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;change&#039;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`File </span><span style="color: #0000FF">${</span><span style="color: #001080">filename</span><span style="color: #0000FF">}</span><span style="color: #A31515"> has been modified somehow`</span><span style="color: #000000">);</span>
+<span style="color: #000000">      });</span>
+
+<span style="color: #000000">      </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`File </span><span style="color: #0000FF">${</span><span style="color: #001080">filename</span><span style="color: #0000FF">}</span><span style="color: #A31515"> is no longer watched`</span><span style="color: #000000">);</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<p><strong>Traza</strong></p>
 				<ul>
-					<li><p>node dist/note-app.js add --user=&quot;nombre del usuario&quot; --title=&quot;titulo de la nota&quot; --body=&quot;cuerpo de la nota&quot; --color=&quot;Color&quot;</p>
-					</li>
-					<li><p>node dist/note-app.js modify --user=&quot;nombre del usuario&quot; --title=&quot;titulo de la nota&quot; --body=&quot;cuerpo de la nota&quot; --color=&quot;Color&quot;</p>
-					</li>
-					<li><p>node dist/note-app.js list --user=&quot;nombre del usuario&quot;</p>
-					</li>
-					<li><p>node dist/note-app.js read --user=&quot;nombre del usurio&quot; --title=&quot;titulo de la nota&quot;</p>
-					</li>
-					<li><p>node dist/note-app.js remove --user=&quot;nombre del usuario&quot; --title=&quot;titulo de la nota&quot;</p>
-					</li>
+					<li>Inicializacion</li>
 				</ul>
-				<a href="#322-note" id="322-note" style="color: inherit; text-decoration: none;">
-					<h5><a href="./src/Note.ts">3.2.2 Note</a></h5>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 1. Se introduce el main del programa en la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>main</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 2. Se introduce el access en la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>access</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>main</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 3. Se pasa el access al registro de eventos.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>main</td>
+							<td>access</td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 4. El main sale de la pila de llamadas, el access sale del registro de eventos y en la cola de manejadores entra el callback de access</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td></td>
+							<td></td>
+							<td>callback de access</td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 5. El callback sale de la cola de manejadores y es añadido a la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>callback de access</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 6. Empezamos a ejecutar el callback de access</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>console.log(<code>Starting to watch file ${filename}</code>)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>callback de access</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 7. Se ejecuta console.log(<code>Starting to watch file ${filename}</code>) y se muestra en la salida</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>callback de access</td>
+							<td></td>
+							<td></td>
+							<td>Starting to watch file data_base/helloworld.txt</td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 8. Se introduce la función watch(process.argv[2]) en la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>watch(process.argv[2])</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>callback de access</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 9. Se ejecuta la función watch(process.argv[2]) y sale de la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>callback de access</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 10. Se introduce la función watcher.on(&#39;change&#39;) en la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>callback de access</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 11. Se pasa el watcher.on(&#39;change&#39;) al registro de eventos</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>callback de access</td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 12. Se queda esperando e introduce console.log(<code>File ${filename} is no longer watched</code>) en la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>console.log(<code>File ${filename} is no longer watched</code>)</td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>callback de access</td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 13. Se ejecuta console.log(<code>File ${filename} is no longer watched</code>) y se muestra en la salida</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td></td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td>File data_base/helloworld.txt is no longer watched</td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 14. El callback de watcher.on(&#39;change) se pasa a la cola de manejadores.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td></td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td>callback de watcher.on(&#39;change&#39;)</td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 15. El callback de watcher.on(&#39;change) pasa a la pila de llamadas</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>callback de watcher.on(&#39;change&#39;)</td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 16. Se ejecuta el callback de watcher.on(&#39;change&#39;) y se añade a la pila de llamada console.log(<code>File ${filename} has been modified somehow</code>)</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>console.log(<code>File ${filename} has been modified somehow</code>)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>callback de watcher.on(&#39;change&#39;)</td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<ul>
+					<li>Step 17. Se ejecuta el  console.log(<code>File ${filename} has been modified somehow</code>) y se muestra por la salida y el callback sale de la pila </li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>pila de llamadas</th>
+							<th>registro de eventos</th>
+							<th>cola de manejadores</th>
+							<th>salida</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td></td>
+							<td>watcher.on(&#39;change&#39;)</td>
+							<td></td>
+							<td>File data_base/helloworld has been modified somehow</td>
+						</tr>
+				</tbody></table>
+				<p>Ahora se repetirian los 4 últimos pasos hasta que el proceso termine.</p>
+				<p><strong>¿Qué hace la función access?</strong></p>
+				<p>La función access de Node.js es un método utilizado para probar los permisos de un archivo o directorio determinado. Los permisos que se van a comprobar pueden ser especificados como un parámetro usando las constantes de acceso a archivos.</p>
+				<p><strong>¿Para qué sirve el objeto constants?</strong></p>
+				<p>El objeto constants es utilizado para las operaciones del sistema de archivos, débido a que contiene las constantes más utilizadas para este tipo de operaciones.</p>
+				<a href="#322-ejercicio-2" id="322-ejercicio-2" style="color: inherit; text-decoration: none;">
+					<h5><a href="src/ejercicio2.ts">3.2.2 Ejercicio 2</a></h5>
 				</a>
-				<p>Clase <strong>Note</strong> que realiza la representación de un objeto nota, cuenta con tres atributos title, body y color que representan respectivamente el titulo, el cuerpo y el color que tendría una nota. Cuenta con 8 atributos, 3 son getters para los atributos de la clase y 3 son setters para los atributos también, además de un método printTitle y printBody, estos dos últimos métodos revisan de que color es el objeto nota e imprimen con el <strong>chalk</strong> su color correspondiente el titulo y el cuerpo respectivamente mediante un switch.</p>
-				<a href="#323-notegestore" id="323-notegestore" style="color: inherit; text-decoration: none;">
-					<h5><a href="./src/NoteGestor.ts">3.2.3 NoteGestore</a></h5>
+				<p>Para el ejercicio 2 creamos un <strong>yarg</strong> para utilizar el comando info que proporcionar información sobre el número de líneas, palabras o caracteres que contiene un fichero de texto. A su vez creamos las funciones <strong>pipe</strong> y <strong>noPipe</strong> para realizar el ejercicio de las dos máneras de que se nos piden.</p>
+				<p>El comando <strong>info</strong> se construye pasando por línea de cómando, la <strong>ruta del archivo</strong> siendo un string y los siguientes atributos siendo booleanos son <strong>pipe</strong>, <strong>character</strong>, <strong>word</strong> o <strong>line</strong>, para de esta mánera indicar que método queremos usar y sobre que queremos proporcionar información. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método correspondiente según el estado de <strong>pipe</strong>.</p>
+				<p>El método <strong>pipe</strong> recibe como atributo la <strong>ruta del archivo</strong> y los booleanos <strong>character</strong>, <strong>word</strong> y <strong>line</strong>. Comprobamos al inicio la ruta del archivo para así comprobar si el archivo existe o no. Si el archivo existe realizamos un if para cada booleano, en caso de ser true realizamos dos métodos <strong>spawn</strong>, uno realizando un echo y el otro un <strong>wc</strong> pasandole la opción correspondiente para caracteres, palabras y lineas y utilizando el método <strong>pipe</strong> para mostrar el <strong>echo</strong> y los resultados del <strong>wc</strong>.</p>
+				<p>El método <strong>noPipe</strong> recibe como atributo la <strong>ruta del archivo</strong> y los booleanos <strong>character</strong>, <strong>word</strong> y <strong>line</strong>. Comprobamos al inicio la ruta del archivo para así comprobar si el archivo existe o no. Si el archivo existe realizamos el método <strong>spawn</strong> para ejcutar el comando <strong>wc</strong>, luego creamos la varaible <strong>wcOutput</strong> que va a utilizarse para ir almacenando el contenido de la salida estándar generada por el comando wc. A continuación el callback obtenido mediante el método <strong>on</strong> nos permite mostrar por consola las diferentes estadisticas obtenidas a partir de la ejecución del comando <strong>wc</strong> y antes de mostrar por pantalla cáda estadistica realizamos un if de cada booleano para saber si mostrar o no la estadistica correspondiente.</p>
+				<p>Para ejecutar el programa se tienen las siguientes opciones:</p>
+				<p>node dist/ejercicio2.js info --path=&#39;ruta del archivo&#39; --pipe=true --character=true --word=true --line=true</p>
+				<p>las opciones que están a true pueden ponerse a false.</p>
+				<a href="#323-ejercicio-3" id="323-ejercicio-3" style="color: inherit; text-decoration: none;">
+					<h5>3.2.3 <a href="src/ejercicio3.ts">Ejercicio 3</a></h5>
 				</a>
-				<p>Clase <strong>NoteGestore</strong> que realiza las funcionalidades añadir una nota, eliminar una nota, modificar una nota, leer una nota y listar las notas que tiene un usuario. Para realizar estas funcionalidades se cuenta con los métodos addNote, modifyNote, listNote, readNote y removeNote.</p>
-				<p>AddNote recibe como parametros un string que representa el usuario y un objeto de la clase Note para así crear un fichero <strong>JSON</strong> que guarde la nota del usuario. Usando la función <strong>existSync</strong> de <strong>node.js</strong> comprobamos si el directorio del usuario existe, si no existe creamos el directorio y el archivo, si existiera revisamos si existe el archivo, en el caso de existir mostramos un mensaje de error y si no existe lo creamos. Para crear el archivo con el contenido de la nota utilizamos la funcion <strong>writeFileSync</strong> de <strong>node.js</strong>, es importante que el data que se le pase se consiga en un formato adecuado, esto lo realizamos gracias al <strong>JSON.stringify</strong>.</p>
-				<p>modifyNote recibe como parametros un string que representa el usuario y un objeto de la clase para así modificar un archivo <strong>JSON</strong> de un usuario. Usando la función <strong>existSync</strong> de <strong>node.js</strong> comprobamos si el directorio del usuario existe, si no existe mostramos un mensaje de error, si existiera revisamos si existe el archivo, en el caso de no existir mostramos un mensaje de error y si existe lo eliminamos y creamos un nuevo archivo a partir del objeto note recibido por parametro.</p>
-				<p>listNode recibe un parametro string que representa el usuario. Usando la función <strong>existSync</strong> de <strong>node.js</strong> comprobamos si el directorio del usuario existe, si no existe mostramos un mensaje de error, si existiera mostramos un listado de las notas que tiene el usuario. Para mostrar las notas utilizamos la función <strong>readFileSync</strong> de <strong>node.js</strong> para tener un vector con los nombres de todos los archivos JSON que hay en el directorio del usuario, realizamos un forEach para cada elemento del vector y así utilizar la función <strong>readFileSync</strong> para conseguir los datos de cada archivo y crear un objeto de la clase Note con los datos extraidos del fichero para utilizar el método <strong>printTitle</strong>.</p>
-				<p>readNote recibe dos parametros tipo string, para así conseguir el usuario y el titulo. Usando la función <strong>existSync</strong> de <strong>node.js</strong> comprobamos si el directorio del usuario existe, si no existe mostramos un mensaje de error, si existiera comprobamos si exite el archivo, si no existe mostramos un mensaje de error y en caso de existir utilizamos la estrategia del método listNode pero para solo un archivo y usando los métodos <strong>printTitle</strong> y <strong>printBody</strong>.</p>
-				<p>removeNote recibe dos parametros tipo string para así conseguir el usuario y el titulo. Usando la función <strong>existSync</strong> de <strong>node.js</strong> comprobamos si el directorio del usuario existe, si no existe mostramos un mensaje de error, si existiera comprobamos si exite el archivo, si no existe mostramos un mensaje de error y en caso de existir utilizamos la función <strong>rmSync</strong> de <strong>node.js</strong></p>
+				<p>Para el ejercicio 3 creamos un <strong>yarg</strong> para utilizar el comando <strong>watch</strong> que observa el directorio de un usuario esperando un cambio, que puede ser añadir, eliminar o modificar un fichero. A su vez creamos la función <strong>watch</strong>.</p>
+				<p>El comando <strong>watch</strong> se construye pasando por línea de cómando, el <strong>usuario</strong> y la <strong>ruta del directorio</strong> siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método <strong>watch</strong>.</p>
+				<p>El método <strong>watch</strong> recibe como atributo la <strong>ruta del directorio</strong>. Comprobamos al inicio la ruta del directorio para así comprobar si el directorio existe o no. Si el directorio existe realizamos el método <strong>fs.readdir()</strong> para así saber cuantos archivos hay en su interior y dentro del callback de esta función realizamos el <strong>fs.watch()</strong>, combinado con un contador gracias a que <strong>evenType</strong> nos devuelve los string &quot;rename&quot; o &quot;change&quot; y  realizando otro <strong>readdir()</strong> para saber cuantos archivos hay en el momento podemos comparar los estados inicial y el estado nuevo, y así distinguir si se ha creado o eliminado un archivo así cómo si se ha modificado alguno para notificarlo con un mediante un <strong>console.log()</strong>.</p>
+				<p>Para ejecutar el programa se tienen la siguiente opcion:</p>
+				<p>node dist/ejercicio3.js watch --user=&#39;usuario&#39; --path=&#39;ruta del archivo&#39;</p>
+				<p><strong>¿Cómo haría para mostrar, no solo el nombre, sino también el contenido del fichero, en el caso de que haya sido creado o modificado?</strong></p>
+				<p>Cuando haya sido creado o modificado, además del <strong>console.log()</strong> que se ejecuta a continuación podemos implementar la función <strong>fs.readFile()</strong> y en el callback de esta función hacer un <strong>console.log()</strong> del data del fichero</p>
+				<p><strong>¿Cómo haría para que no solo se observase el directorio de un único usuario sino todos los directorios correspondientes a los diferentes usuarios de la aplicación</strong></p>
+				<p>Para observar los directorios correspondientes de cada usuario podriamos incluir que nuestro <strong>fs.watch()</strong> estuviera la opción <strong>recursive</strong>, de esta manera si observamos un directorio que tiene como subdirectorios los de cada usuario estos también estarán siendo observados.</p>
+				<a href="#324-ejercicio-4" id="324-ejercicio-4" style="color: inherit; text-decoration: none;">
+					<h5>3.2.4 <a href="src/ejercicio4.ts">Ejercicio 4</a></h5>
+				</a>
+				<p>Para el ejercicio 4 creamos varios <strong>yarg</strong> para utilizar el comando <strong>check</strong>, <strong>mkdir</strong>, <strong>ls</strong>, <strong>cat</strong>, <strong>rm</strong> y <strong>mv</strong> que realizan distintan funciones sobre manejo de ficheros y directorios. A su vez creamos las funciones <strong>check</strong>, <strong>mkdir</strong>, <strong>ls</strong>, <strong>cat</strong>, <strong>rm</strong> y <strong>mv</strong>.</p>
+				<p>El comando <strong>check</strong> se utiliza para que dada una ruta concreta, muestra si es un directorio o un fichero, se construye pasando por línea de cómando, la <strong>ruta</strong> siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método <strong>check</strong>.</p>
+				<p>El comando <strong>mkdir</strong> se utiliza para crear un nuevo directorio a partir de una nueva ruta que recibe como parámetro, se construye pasando por línea de cómando, la <strong>ruta</strong> siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método <strong>mkdir</strong>.</p>
+				<p>El comando <strong>ls</strong> se utiliza para que listar los ficheros dentro de un directorio, se construye pasando por línea de cómando, la <strong>ruta</strong> siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método <strong>ls</strong>.</p>
+				<p>El comando <strong>cat</strong> se utiliza para que muestra el contenido de un fichero, se construye pasando por línea de cómando, la <strong>ruta</strong> siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método <strong>cat</strong>.</p>
+				<p>El comando <strong>rm</strong> se utiliza para que borra ficheros y directorios, se construye pasando por línea de cómando, la <strong>ruta</strong> siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método <strong>rm</strong>.</p>
+				<p>El comando <strong>mv</strong> se utiliza para que mueve y copia ficheros y/o directorios de una ruta a otra, se construye pasando por línea de cómando, la <strong>ruta de origen</strong> y la <strong>ruta de destino</strong> siendo un string. En el handler comprobamos que los datos han sido introducidos correctamente y llamamos al método <strong>mv</strong>.</p>
+				<p>El método <strong>check</strong> recibe como atributo la <strong>ruta</strong>. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método <strong>fs.readdir()</strong> y comprobamos el error, si el error es true se trata de un fichero y si es false se tratará de un directorio, siendo en cada caso realizamos un <strong>console.log()</strong> para mostrar por consola cual es el resultado.</p>
+				<p>El método <strong>mkdir</strong> recibe como atributo la <strong>ruta</strong>. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si no existe realizamos el método <strong>spawn()</strong> para ejecutar el comando <strong>mkdir</strong>.</p>
+				<p>El método <strong>ls</strong> recibe como atributo la <strong>ruta</strong>. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método <strong>spawn()</strong> para ejecutar el comando <strong>ls</strong>.</p>
+				<p>El método <strong>cat</strong> recibe como atributo la <strong>ruta</strong>. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método <strong>spawn()</strong> para ejecutar el comando <strong>cat</strong>.</p>
+				<p>El método <strong>rm</strong> recibe como atributo la <strong>ruta</strong>. Comprobamos al inicio la ruta existe para así comprobar si existe o no. Si existe realizamos el método <strong>spawn()</strong> para ejecutar el comando <strong>rm</strong>.</p>
+				<p>El método <strong>mv</strong> recibe como atributo la <strong>ruta de origen</strong> y la <strong>ruta de destino</strong>. Comprobamos al inicio la ruta de origen así cómo ruta de destino para así comprobar si existe o no. Si existen realizamos el método <strong>spawn()</strong> para ejecutar el comando <strong>mv</strong>.</p>
 				<a href="#4-conclusiones" id="4-conclusiones" style="color: inherit; text-decoration: none;">
 					<h3>4. Conclusiones</h3>
 				</a>
-				<p>En conclusión la utilización del paquete <strong>yarg</strong> nos permite aprovechar la línea de comando y el paquete <strong>chalk</strong> aprovechar configuraciones distintas para mostrar de forma más cómoda información de distinta indole, esto en combinación con <strong>node.js</strong> nos permite crear programas mucho más dinámicos y que modelen aplicaciones que se usarían en el día a día.</p>
-				<p>Así mismo la implementación de <strong>Sonar Cloud</strong> nos permite comprobar la calidad de nuestro código de manera mucho más cómoda.</p>
+				<p>En conclusión está práctica con diversos ejercicios, algunos más sencillos que otros tienen un punto más téorico, cómo el ejercicio 1, pero que sirven bastante para profundizar en la utilización de la API de callbacks la asíncrona así cómo en el seguimiento de ejecución de un proceso.</p>
 				<a href="#5-bibliografía" id="5-bibliografía" style="color: inherit; text-decoration: none;">
 					<h3>5. Bibliografía</h3>
 				</a>
-				<p><a href="https://ull-esit-inf-dsi-2021.github.io/prct08-filesystem-notes-app/">Guión de la práctica 8</a></p>
+				<p><a href="https://ull-esit-inf-dsi-2021.github.io/prct09-async-fs-process/">Guión de la práctica 9</a></p>
 				<p><a href="https://ull-esit-inf-dsi-2021.github.io/nodejs-theory/nodejs-intro.html">Introducción a Node.js</a></p>
 				<p><a href="https://ull-esit-inf-dsi-2021.github.io/nodejs-theory/nodejs-filesystem.html">Introducción al sistema de ficheros en Node.js</a></p>
 				<p><a href="https://www.npmjs.com/package/yargs">Yarg</a></p>
-				<p><a href="https://www.npmjs.com/package/chalk">Chalk</a></p>
-				<p><a href="https://nodejs.org/dist/latest-v15.x/docs/api/fs.html#fs_synchronous_api">API síncrona</a> </p>
+				<p><a href="https://nodejs.org/dist/latest/docs/api/fs.html#fs_callback_api">API de callbacks</a></p>
+				<p><a href="https://nodejs.org/dist/latest/docs/api/child_process.html#child_process_asynchronous_process_creation">API asíncrona</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -162,6 +579,18 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/notegestor.html">Note<wbr>Gestor</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/ejercicio1.html">ejercicio1</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/ejercicio2.html">ejercicio2</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/ejercicio3.html">ejercicio3</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/ejercicio4.html">ejercicio4</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/note_app.html">note-<wbr>app</a>
