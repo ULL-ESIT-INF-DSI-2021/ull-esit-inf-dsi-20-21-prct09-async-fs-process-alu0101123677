@@ -190,7 +190,11 @@ El objeto constants es utilizado para las operaciones del sistema de archivos, d
 
 **¿Cómo haría para mostrar, no solo el nombre, sino también el contenido del fichero, en el caso de que haya sido creado o modificado?**
 
-**¿Cómo haría para que no solo se observase el directorio de un único usuario sino otods los directorios correspondientes a los diferentes usuarios de la aplicación**
+Cuando haya sido creado o modificado, además del **console.log()** que se ejecuta a continuación podemos implementar la función **fs.readFile()** y en el callback de esta función hacer un **console.log()** del data del fichero
+
+**¿Cómo haría para que no solo se observase el directorio de un único usuario sino todos los directorios correspondientes a los diferentes usuarios de la aplicación**
+
+Para observar los directorios correspondientes de cada usuario podriamos incluir que nuestro **fs.watch()** estuviera la opción **recursive**, de esta manera si observamos un directorio que tiene como subdirectorios los de cada usuario estos también estarán siendo observados.
 
 
 
